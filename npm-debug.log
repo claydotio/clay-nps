@@ -1,0 +1,72 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/austin/.local/bin/node',
+1 verbose cli   '/home/austin/.local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'gulp-auto-prefixer' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json style@0.0.3 Invalid filename in 'files' list:
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'gulp-auto-prefixer', null ]
+7 verbose cache add name=undefined spec="gulp-auto-prefixer" args=["gulp-auto-prefixer",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'gulp-auto-prefixer',
+8 verbose parsed url   path: 'gulp-auto-prefixer',
+8 verbose parsed url   href: 'gulp-auto-prefixer' }
+9 silly lockFile 63684438-gulp-auto-prefixer gulp-auto-prefixer
+10 verbose lock gulp-auto-prefixer /home/austin/.npm/63684438-gulp-auto-prefixer.lock
+11 silly lockFile 63684438-gulp-auto-prefixer gulp-auto-prefixer
+12 silly lockFile 63684438-gulp-auto-prefixer gulp-auto-prefixer
+13 verbose addNamed [ 'gulp-auto-prefixer', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile edb16566-gulp-auto-prefixer gulp-auto-prefixer@
+16 verbose lock gulp-auto-prefixer@ /home/austin/.npm/edb16566-gulp-auto-prefixer.lock
+17 silly addNameRange { name: 'gulp-auto-prefixer', range: '*', hasData: false }
+18 verbose request where is /gulp-auto-prefixer
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id f3e9db6350f37830
+21 verbose url raw /gulp-auto-prefixer
+22 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-auto-prefixer' ]
+23 verbose url resolved https://registry.npmjs.org/gulp-auto-prefixer
+24 verbose request where is https://registry.npmjs.org/gulp-auto-prefixer
+25 info trying registry request attempt 1 at 13:32:00
+26 http GET https://registry.npmjs.org/gulp-auto-prefixer
+27 http 404 https://registry.npmjs.org/gulp-auto-prefixer
+28 silly registry.get cb [ 404,
+28 silly registry.get   { 'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=0',
+28 silly registry.get     'content-length': '2',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     date: 'Tue, 25 Aug 2015 20:32:00 GMT',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     connection: 'keep-alive',
+28 silly registry.get     'x-served-by': 'cache-sjc3128-SJC',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1440534720.544520,VS0,VE352' } ]
+29 silly lockFile edb16566-gulp-auto-prefixer gulp-auto-prefixer@
+30 silly lockFile edb16566-gulp-auto-prefixer gulp-auto-prefixer@
+31 error 404 Not Found
+31 error 404
+31 error 404 'gulp-auto-prefixer' is not in the npm registry.
+31 error 404 You should bug the author to publish it
+31 error 404 It was specified as a dependency of 'clay-nps'
+31 error 404
+31 error 404 Note that you can also install from a
+31 error 404 tarball, folder, or http url, or git url.
+32 error System Linux 3.13.0-37-generic
+33 error command "/home/austin/.local/bin/node" "/home/austin/.local/bin/npm" "install" "gulp-auto-prefixer"
+34 error cwd /home/austin/dev/clay-nps
+35 error node -v v0.10.33
+36 error npm -v 1.4.28
+37 error code E404
+38 verbose exit [ 1, true ]

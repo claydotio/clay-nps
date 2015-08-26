@@ -1,0 +1,26 @@
+{
+  "name": "clay-nps",
+  "version": "0.1.0",
+  "description": "core",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claydotio/clay-nps.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claydotio/clay-nps/issues"
+  },
+  "homepage": "https://github.com/claydotio/clay-nps",
+  "dependencies": {
+    "coffee-script": "^1.9.2",
+    "lodash": "^3.7.0",
+    "rx-lite": "^2.5.2",
+    "zorium": "^1.0.0",
+    "zorium-paper": "0.4.1"
+  }
+}
