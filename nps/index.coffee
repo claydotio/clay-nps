@@ -20,11 +20,11 @@ module.exports = class Nps
     @$dialog = new Dialog()
 
     @npsValue = new Rx.BehaviorSubject NPS_DEFAULT
-    @commentsValue = new Rx.BehaviorSubject ''
+    @commentValue = new Rx.BehaviorSubject ''
     @emailValue = new Rx.BehaviorSubject ''
 
-    @$commentsInput = new Input
-      value: @commentsValue
+    @$commentInput = new Input
+      value: @commentValue
     @$emailInput = new Input
       value: @emailValue
 
@@ -33,7 +33,7 @@ module.exports = class Nps
 
     @state = z.state
       npsValue: @npsValue
-      commentsValue: @commentsValue
+      commentValue: @commentValue
       emailValue: @emailValue
       npsSet: false
       isLoading: false
@@ -50,7 +50,7 @@ module.exports = class Nps
       localStorage['visitCount'] >= MIN_VISITS_TO_SHOW
 
   submitNps: ({gameKey}) =>
-    {isLoading, npsValue, commentsValue, emailValue} = @state.getValue()
+    {isLoading, npsValue, commentValue, emailValue} = @state.getValue()
 
     if isLoading
       return
@@ -63,7 +63,7 @@ module.exports = class Nps
 
     @model.nps.create {
       score: npsValue
-      comments: commentsValue
+      comment: commentValue
       email: emailValue
       gameKey: gameKey
     }
@@ -130,8 +130,8 @@ module.exports = class Nps
                     },
                       number
               z 'label.label',
-                z '.text', 'Comments or suggestions?'
-                z @$commentsInput,
+                z '.text', 'comment or suggestions?'
+                z @$commentInput,
                   hintText: 'Tell us what you think'
                   colors:
                     c500: colors.$grey900
