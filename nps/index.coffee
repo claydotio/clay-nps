@@ -39,9 +39,9 @@ module.exports = class Nps
       isLoading: false
       isPrompt: true
 
-    if localStorage and not localStorage?['visitCount']
+    if localStorage? and not localStorage?['visitCount']
       localStorage['visitCount'] = 1
-    else if localStorage
+    else if localStorage?
       localStorage['visitCount'] = parseInt(localStorage['visitCount']) + 1
 
   shouldBeShown: ->
