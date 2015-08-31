@@ -1,72 +1,119 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/austin/.local/bin/node',
 1 verbose cli   '/home/austin/.local/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   'gulp-auto-prefixer' ]
+1 verbose cli   'link' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
-4 warn package.json style@0.0.3 Invalid filename in 'files' list:
-5 verbose readDependencies using package.json deps
-6 verbose cache add [ 'gulp-auto-prefixer', null ]
-7 verbose cache add name=undefined spec="gulp-auto-prefixer" args=["gulp-auto-prefixer",null]
-8 verbose parsed url { protocol: null,
-8 verbose parsed url   slashes: null,
-8 verbose parsed url   auth: null,
-8 verbose parsed url   host: null,
-8 verbose parsed url   port: null,
-8 verbose parsed url   hostname: null,
-8 verbose parsed url   hash: null,
-8 verbose parsed url   search: null,
-8 verbose parsed url   query: null,
-8 verbose parsed url   pathname: 'gulp-auto-prefixer',
-8 verbose parsed url   path: 'gulp-auto-prefixer',
-8 verbose parsed url   href: 'gulp-auto-prefixer' }
-9 silly lockFile 63684438-gulp-auto-prefixer gulp-auto-prefixer
-10 verbose lock gulp-auto-prefixer /home/austin/.npm/63684438-gulp-auto-prefixer.lock
-11 silly lockFile 63684438-gulp-auto-prefixer gulp-auto-prefixer
-12 silly lockFile 63684438-gulp-auto-prefixer gulp-auto-prefixer
-13 verbose addNamed [ 'gulp-auto-prefixer', '' ]
-14 verbose addNamed [ null, '*' ]
-15 silly lockFile edb16566-gulp-auto-prefixer gulp-auto-prefixer@
-16 verbose lock gulp-auto-prefixer@ /home/austin/.npm/edb16566-gulp-auto-prefixer.lock
-17 silly addNameRange { name: 'gulp-auto-prefixer', range: '*', hasData: false }
-18 verbose request where is /gulp-auto-prefixer
-19 verbose request registry https://registry.npmjs.org/
-20 verbose request id f3e9db6350f37830
-21 verbose url raw /gulp-auto-prefixer
-22 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-auto-prefixer' ]
-23 verbose url resolved https://registry.npmjs.org/gulp-auto-prefixer
-24 verbose request where is https://registry.npmjs.org/gulp-auto-prefixer
-25 info trying registry request attempt 1 at 13:32:00
-26 http GET https://registry.npmjs.org/gulp-auto-prefixer
-27 http 404 https://registry.npmjs.org/gulp-auto-prefixer
-28 silly registry.get cb [ 404,
-28 silly registry.get   { 'content-type': 'application/json',
-28 silly registry.get     'cache-control': 'max-age=0',
-28 silly registry.get     'content-length': '2',
-28 silly registry.get     'accept-ranges': 'bytes',
-28 silly registry.get     date: 'Tue, 25 Aug 2015 20:32:00 GMT',
-28 silly registry.get     via: '1.1 varnish',
-28 silly registry.get     age: '0',
-28 silly registry.get     connection: 'keep-alive',
-28 silly registry.get     'x-served-by': 'cache-sjc3128-SJC',
-28 silly registry.get     'x-cache': 'MISS',
-28 silly registry.get     'x-cache-hits': '0',
-28 silly registry.get     'x-timer': 'S1440534720.544520,VS0,VE352' } ]
-29 silly lockFile edb16566-gulp-auto-prefixer gulp-auto-prefixer@
-30 silly lockFile edb16566-gulp-auto-prefixer gulp-auto-prefixer@
-31 error 404 Not Found
-31 error 404
-31 error 404 'gulp-auto-prefixer' is not in the npm registry.
-31 error 404 You should bug the author to publish it
-31 error 404 It was specified as a dependency of 'clay-nps'
-31 error 404
-31 error 404 Note that you can also install from a
-31 error 404 tarball, folder, or http url, or git url.
-32 error System Linux 3.13.0-37-generic
-33 error command "/home/austin/.local/bin/node" "/home/austin/.local/bin/npm" "install" "gulp-auto-prefixer"
-34 error cwd /home/austin/dev/clay-nps
-35 error node -v v0.10.33
-36 error npm -v 1.4.28
-37 error code E404
-38 verbose exit [ 1, true ]
+4 verbose linkPkg /home/austin/dev/clay-nps
+5 verbose link build target /home/austin/.local/lib/node_modules/clay-nps
+6 verbose install where,what [ '/home/austin/dev/clay-nps', [] ]
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/home/austin/dev/clay-nps',
+8 verbose install   [ 'clay-environment',
+8 verbose install     'coffee-script',
+8 verbose install     'lodash',
+8 verbose install     'rx-lite',
+8 verbose install     'zorium',
+8 verbose install     'zorium-paper' ] ]
+9 info preinstall clay-nps@0.1.2
+10 warn package.json clay-environment@0.1.0 No description
+11 warn package.json style@0.0.3 Invalid filename in 'files' list:
+12 verbose readDependencies using package.json deps
+13 verbose already installed skipping rx-lite@^2.5.2 /home/austin/dev/clay-nps
+14 verbose already installed skipping zorium@^1.0.0 /home/austin/dev/clay-nps
+15 verbose already installed skipping zorium-paper@0.4.1 /home/austin/dev/clay-nps
+16 verbose cache add [ 'clay-environment@../clay-environment', null ]
+17 verbose cache add name=undefined spec="clay-environment@../clay-environment" args=["clay-environment@../clay-environment",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'clay-environment@../clay-environment',
+18 verbose parsed url   path: 'clay-environment@../clay-environment',
+18 verbose parsed url   href: 'clay-environment@../clay-environment' }
+19 verbose already installed skipping coffee-script@^1.9.2 /home/austin/dev/clay-nps
+20 verbose cache add name="clay-environment" spec="../clay-environment" args=["clay-environment","../clay-environment"]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: '../clay-environment',
+21 verbose parsed url   path: '../clay-environment',
+21 verbose parsed url   href: '../clay-environment' }
+22 verbose addNamed [ 'clay-environment', '../clay-environment' ]
+23 verbose addNamed [ null, null ]
+24 verbose already installed skipping lodash@^3.7.0 /home/austin/dev/clay-nps
+25 silly lockFile 3a53584c-lay-environment-clay-environment clay-environment@../clay-environment
+26 verbose lock clay-environment@../clay-environment /home/austin/.npm/3a53584c-lay-environment-clay-environment.lock
+27 info addNameTag [ 'clay-environment', '../clay-environment' ]
+28 verbose request where is /clay-environment
+29 verbose request registry https://registry.npmjs.org/
+30 verbose request id 492c0826abfcc208
+31 verbose url raw /clay-environment
+32 verbose url resolving [ 'https://registry.npmjs.org/', './clay-environment' ]
+33 verbose url resolved https://registry.npmjs.org/clay-environment
+34 verbose request where is https://registry.npmjs.org/clay-environment
+35 info trying registry request attempt 1 at 15:35:29
+36 http GET https://registry.npmjs.org/clay-environment
+37 http 404 https://registry.npmjs.org/clay-environment
+38 silly registry.get cb [ 404,
+38 silly registry.get   { 'content-type': 'application/json',
+38 silly registry.get     'cache-control': 'max-age=0',
+38 silly registry.get     'content-length': '2',
+38 silly registry.get     'accept-ranges': 'bytes',
+38 silly registry.get     date: 'Mon, 31 Aug 2015 22:35:29 GMT',
+38 silly registry.get     via: '1.1 varnish',
+38 silly registry.get     age: '0',
+38 silly registry.get     connection: 'keep-alive',
+38 silly registry.get     'x-served-by': 'cache-sjc3122-SJC',
+38 silly registry.get     'x-cache': 'MISS',
+38 silly registry.get     'x-cache-hits': '0',
+38 silly registry.get     'x-timer': 'S1441060529.559903,VS0,VE41' } ]
+39 info maybeGithub Attempting ../clay-environment from git://github.com/../clay-environment
+40 silly lockFile e7616045-git-github-com-clay-environment git://github.com/../clay-environment
+41 verbose lock git://github.com/../clay-environment /home/austin/.npm/e7616045-git-github-com-clay-environment.lock
+42 verbose addRemoteGit [ 'git://github.com/../clay-environment', 'master' ]
+43 verbose git clone git://github.com/../clay-environment Cloning into bare repository '/home/austin/.npm/_git-remotes/git-github-com-clay-environment-e7616045'...
+43 verbose git clone git://github.com/../clay-environment fatal: remote error:
+43 verbose git clone git://github.com/../clay-environment   Repository not found.
+44 silly lockFile e7616045-git-github-com-clay-environment git://github.com/../clay-environment
+45 silly lockFile e7616045-git-github-com-clay-environment git://github.com/../clay-environment
+46 info maybeGithub Attempting ../clay-environment from git+ssh://git@github.com:../clay-environment
+47 silly lockFile b7f5c6bd-git-github-com-clay-environment git@github.com:../clay-environment
+48 verbose lock git@github.com:../clay-environment /home/austin/.npm/b7f5c6bd-git-github-com-clay-environment.lock
+49 verbose addRemoteGit [ 'git@github.com:../clay-environment', 'master' ]
+50 error git clone git@github.com:../clay-environment Cloning into bare repository '/home/austin/.npm/_git-remotes/git-github-com-clay-environment-b7f5c6bd'...
+50 error git clone git@github.com:../clay-environment ERROR: Repository not found.
+50 error git clone git@github.com:../clay-environment fatal: Could not read from remote repository.
+50 error git clone git@github.com:../clay-environment
+50 error git clone git@github.com:../clay-environment Please make sure you have the correct access rights
+50 error git clone git@github.com:../clay-environment and the repository exists.
+51 silly lockFile b7f5c6bd-git-github-com-clay-environment git@github.com:../clay-environment
+52 silly lockFile b7f5c6bd-git-github-com-clay-environment git@github.com:../clay-environment
+53 silly lockFile 3a53584c-lay-environment-clay-environment clay-environment@../clay-environment
+54 silly lockFile 3a53584c-lay-environment-clay-environment clay-environment@../clay-environment
+55 error 404 Not Found
+55 error 404
+55 error 404 'clay-environment' is not in the npm registry.
+55 error 404 You should bug the author to publish it
+55 error 404 It was specified as a dependency of 'clay-nps'
+55 error 404
+55 error 404 Note that you can also install from a
+55 error 404 tarball, folder, or http url, or git url.
+56 error System Linux 3.13.0-37-generic
+57 error command "/home/austin/.local/bin/node" "/home/austin/.local/bin/npm" "link"
+58 error cwd /home/austin/dev/clay-nps
+59 error node -v v0.10.33
+60 error npm -v 1.4.28
+61 error code E404
+62 verbose exit [ 1, true ]

@@ -5,6 +5,7 @@ Dialog = require 'zorium-paper/dialog'
 Input = require 'zorium-paper/input'
 Button = require 'zorium-paper/button'
 colors = require 'zorium-paper/colors.json'
+log = require 'loga'
 
 if window?
   require './index.styl'
@@ -60,6 +61,12 @@ module.exports = class Nps
 
     @state.set isLoading: true
     localStorage?['hasGivenFeedback'] = '1'
+
+    @model.user?.emit? 'nps', {
+      fields:
+        value: parseInt npsValue
+    }
+    .catch log.trace
 
     @model.nps.create {
       score: npsValue

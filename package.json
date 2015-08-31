@@ -1,6 +1,6 @@
 {
   "name": "clay-nps",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "core",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
   "dependencies": {
     "coffee-script": "^1.9.2",
     "lodash": "^3.7.0",
+    "loga": "^0.1.1",
     "rx-lite": "^2.5.2",
     "zorium": "^1.0.0",
     "zorium-paper": "0.4.1"
