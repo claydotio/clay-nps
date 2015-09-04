@@ -1,8 +1,8 @@
 module.exports = class Nps
-  constructor: ({@cookieSubject, @proxy, @config}) -> null
+  constructor: ({@auth, @config}) -> null
 
   create: ({gameKey, score, comment, email}) =>
-    @proxy @config.CLAY_API_URL + '/nps',
+    @auth.fetch @config.CLAY_API_URL + '/nps',
       method: 'POST'
       body:
         gameKey: gameKey
@@ -10,4 +10,3 @@ module.exports = class Nps
         comment: comment
         email: email
         userAgent: navigator.userAgent
-      qs: {accessToken: @cookieSubject.getValue()[@config.AUTH_COOKIE]}
