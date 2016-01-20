@@ -1,119 +1,109 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/austin/.local/bin/node',
 1 verbose cli   '/home/austin/.local/bin/npm',
-1 verbose cli   'link' ]
+1 verbose cli   'publish' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
-4 verbose linkPkg /home/austin/dev/clay-nps
-5 verbose link build target /home/austin/.local/lib/node_modules/clay-nps
-6 verbose install where,what [ '/home/austin/dev/clay-nps', [] ]
-7 verbose readDependencies using package.json deps
-8 verbose install where, deps [ '/home/austin/dev/clay-nps',
-8 verbose install   [ 'clay-environment',
-8 verbose install     'coffee-script',
-8 verbose install     'lodash',
-8 verbose install     'rx-lite',
-8 verbose install     'zorium',
-8 verbose install     'zorium-paper' ] ]
-9 info preinstall clay-nps@0.1.2
-10 warn package.json clay-environment@0.1.0 No description
-11 warn package.json style@0.0.3 Invalid filename in 'files' list:
-12 verbose readDependencies using package.json deps
-13 verbose already installed skipping rx-lite@^2.5.2 /home/austin/dev/clay-nps
-14 verbose already installed skipping zorium@^1.0.0 /home/austin/dev/clay-nps
-15 verbose already installed skipping zorium-paper@0.4.1 /home/austin/dev/clay-nps
-16 verbose cache add [ 'clay-environment@../clay-environment', null ]
-17 verbose cache add name=undefined spec="clay-environment@../clay-environment" args=["clay-environment@../clay-environment",null]
-18 verbose parsed url { protocol: null,
-18 verbose parsed url   slashes: null,
-18 verbose parsed url   auth: null,
-18 verbose parsed url   host: null,
-18 verbose parsed url   port: null,
-18 verbose parsed url   hostname: null,
-18 verbose parsed url   hash: null,
-18 verbose parsed url   search: null,
-18 verbose parsed url   query: null,
-18 verbose parsed url   pathname: 'clay-environment@../clay-environment',
-18 verbose parsed url   path: 'clay-environment@../clay-environment',
-18 verbose parsed url   href: 'clay-environment@../clay-environment' }
-19 verbose already installed skipping coffee-script@^1.9.2 /home/austin/dev/clay-nps
-20 verbose cache add name="clay-environment" spec="../clay-environment" args=["clay-environment","../clay-environment"]
-21 verbose parsed url { protocol: null,
-21 verbose parsed url   slashes: null,
-21 verbose parsed url   auth: null,
-21 verbose parsed url   host: null,
-21 verbose parsed url   port: null,
-21 verbose parsed url   hostname: null,
-21 verbose parsed url   hash: null,
-21 verbose parsed url   search: null,
-21 verbose parsed url   query: null,
-21 verbose parsed url   pathname: '../clay-environment',
-21 verbose parsed url   path: '../clay-environment',
-21 verbose parsed url   href: '../clay-environment' }
-22 verbose addNamed [ 'clay-environment', '../clay-environment' ]
-23 verbose addNamed [ null, null ]
-24 verbose already installed skipping lodash@^3.7.0 /home/austin/dev/clay-nps
-25 silly lockFile 3a53584c-lay-environment-clay-environment clay-environment@../clay-environment
-26 verbose lock clay-environment@../clay-environment /home/austin/.npm/3a53584c-lay-environment-clay-environment.lock
-27 info addNameTag [ 'clay-environment', '../clay-environment' ]
-28 verbose request where is /clay-environment
-29 verbose request registry https://registry.npmjs.org/
-30 verbose request id 492c0826abfcc208
-31 verbose url raw /clay-environment
-32 verbose url resolving [ 'https://registry.npmjs.org/', './clay-environment' ]
-33 verbose url resolved https://registry.npmjs.org/clay-environment
-34 verbose request where is https://registry.npmjs.org/clay-environment
-35 info trying registry request attempt 1 at 15:35:29
-36 http GET https://registry.npmjs.org/clay-environment
-37 http 404 https://registry.npmjs.org/clay-environment
-38 silly registry.get cb [ 404,
-38 silly registry.get   { 'content-type': 'application/json',
-38 silly registry.get     'cache-control': 'max-age=0',
-38 silly registry.get     'content-length': '2',
-38 silly registry.get     'accept-ranges': 'bytes',
-38 silly registry.get     date: 'Mon, 31 Aug 2015 22:35:29 GMT',
-38 silly registry.get     via: '1.1 varnish',
-38 silly registry.get     age: '0',
-38 silly registry.get     connection: 'keep-alive',
-38 silly registry.get     'x-served-by': 'cache-sjc3122-SJC',
-38 silly registry.get     'x-cache': 'MISS',
-38 silly registry.get     'x-cache-hits': '0',
-38 silly registry.get     'x-timer': 'S1441060529.559903,VS0,VE41' } ]
-39 info maybeGithub Attempting ../clay-environment from git://github.com/../clay-environment
-40 silly lockFile e7616045-git-github-com-clay-environment git://github.com/../clay-environment
-41 verbose lock git://github.com/../clay-environment /home/austin/.npm/e7616045-git-github-com-clay-environment.lock
-42 verbose addRemoteGit [ 'git://github.com/../clay-environment', 'master' ]
-43 verbose git clone git://github.com/../clay-environment Cloning into bare repository '/home/austin/.npm/_git-remotes/git-github-com-clay-environment-e7616045'...
-43 verbose git clone git://github.com/../clay-environment fatal: remote error:
-43 verbose git clone git://github.com/../clay-environment   Repository not found.
-44 silly lockFile e7616045-git-github-com-clay-environment git://github.com/../clay-environment
-45 silly lockFile e7616045-git-github-com-clay-environment git://github.com/../clay-environment
-46 info maybeGithub Attempting ../clay-environment from git+ssh://git@github.com:../clay-environment
-47 silly lockFile b7f5c6bd-git-github-com-clay-environment git@github.com:../clay-environment
-48 verbose lock git@github.com:../clay-environment /home/austin/.npm/b7f5c6bd-git-github-com-clay-environment.lock
-49 verbose addRemoteGit [ 'git@github.com:../clay-environment', 'master' ]
-50 error git clone git@github.com:../clay-environment Cloning into bare repository '/home/austin/.npm/_git-remotes/git-github-com-clay-environment-b7f5c6bd'...
-50 error git clone git@github.com:../clay-environment ERROR: Repository not found.
-50 error git clone git@github.com:../clay-environment fatal: Could not read from remote repository.
-50 error git clone git@github.com:../clay-environment
-50 error git clone git@github.com:../clay-environment Please make sure you have the correct access rights
-50 error git clone git@github.com:../clay-environment and the repository exists.
-51 silly lockFile b7f5c6bd-git-github-com-clay-environment git@github.com:../clay-environment
-52 silly lockFile b7f5c6bd-git-github-com-clay-environment git@github.com:../clay-environment
-53 silly lockFile 3a53584c-lay-environment-clay-environment clay-environment@../clay-environment
-54 silly lockFile 3a53584c-lay-environment-clay-environment clay-environment@../clay-environment
-55 error 404 Not Found
-55 error 404
-55 error 404 'clay-environment' is not in the npm registry.
-55 error 404 You should bug the author to publish it
-55 error 404 It was specified as a dependency of 'clay-nps'
-55 error 404
-55 error 404 Note that you can also install from a
-55 error 404 tarball, folder, or http url, or git url.
-56 error System Linux 3.13.0-37-generic
-57 error command "/home/austin/.local/bin/node" "/home/austin/.local/bin/npm" "link"
-58 error cwd /home/austin/dev/clay-nps
-59 error node -v v0.10.33
-60 error npm -v 1.4.28
-61 error code E404
-62 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/austin/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/austin/.npm/clay-nps/0.2.2/package.tgz', '.' ]
+11 verbose tarball /home/austin/.npm/clay-nps/0.2.2/package.tgz
+12 verbose folder .
+13 info prepublish clay-nps@0.2.2
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/austin/.npm/1f1177db-tar.lock
+16 silly lockFile b38f4edf-n-npm-clay-nps-0-2-2-package-tgz tar:///home/austin/.npm/clay-nps/0.2.2/package.tgz
+17 verbose lock tar:///home/austin/.npm/clay-nps/0.2.2/package.tgz /home/austin/.npm/b38f4edf-n-npm-clay-nps-0-2-2-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile b38f4edf-n-npm-clay-nps-0-2-2-package-tgz tar:///home/austin/.npm/clay-nps/0.2.2/package.tgz
+21 silly lockFile b38f4edf-n-npm-clay-nps-0-2-2-package-tgz tar:///home/austin/.npm/clay-nps/0.2.2/package.tgz
+22 silly lockFile 6d6e5efd-ustin-npm-clay-nps-0-2-2-package /home/austin/.npm/clay-nps/0.2.2/package
+23 verbose lock /home/austin/.npm/clay-nps/0.2.2/package /home/austin/.npm/6d6e5efd-ustin-npm-clay-nps-0-2-2-package.lock
+24 silly lockFile 6d6e5efd-ustin-npm-clay-nps-0-2-2-package /home/austin/.npm/clay-nps/0.2.2/package
+25 silly lockFile 6d6e5efd-ustin-npm-clay-nps-0-2-2-package /home/austin/.npm/clay-nps/0.2.2/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'clay-nps',
+28 silly publish   version: '0.2.2',
+28 silly publish   description: 'core',
+28 silly publish   main: 'index.js',
+28 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/claydotio/clay-nps.git' },
+28 silly publish   author: '',
+28 silly publish   license: '',
+28 silly publish   bugs: { url: 'https://github.com/claydotio/clay-nps/issues' },
+28 silly publish   homepage: 'https://github.com/claydotio/clay-nps',
+28 silly publish   dependencies:
+28 silly publish    { 'clay-environment': '^0.3.0',
+28 silly publish      'coffee-script': '^1.9.2',
+28 silly publish      lodash: '^3.7.0',
+28 silly publish      loga: '^0.1.1',
+28 silly publish      'rx-lite': '^2.5.2',
+28 silly publish      zorium: '^1.0.0',
+28 silly publish      'zorium-paper': '0.4.1' },
+28 silly publish   readme: '# clay-nps\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '0cf852e530b57a5c33d1a899b602e879640dc421',
+28 silly publish   _id: 'clay-nps@0.2.2',
+28 silly publish   _shasum: 'db41b6e6ed6ca2f232328fc83a522234f8fbc620',
+28 silly publish   _from: '.' }
+29 verbose request where is /clay-nps
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 53b1e3528e2d4fff
+32 verbose url raw /clay-nps
+33 verbose url resolving [ 'https://registry.npmjs.org/', './clay-nps' ]
+34 verbose url resolved https://registry.npmjs.org/clay-nps
+35 verbose request where is https://registry.npmjs.org/clay-nps
+36 info trying registry request attempt 1 at 01:38:10
+37 http PUT https://registry.npmjs.org/clay-nps
+38 http 403 https://registry.npmjs.org/clay-nps
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Wed, 20 Jan 2016 09:38:11 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-lax1435-LAX',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1453282691.222644,VS0,VE139' }
+40 error publish Failed PUT 403
+41 error Error: "You cannot publish over the previously published version 0.2.2." : clay-nps
+41 error     at RegClient.<anonymous> (/home/austin/.local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/home/austin/.local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/home/austin/.local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/home/austin/.local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/home/austin/.local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Linux 3.13.0-37-generic
+44 error command "/home/austin/.local/bin/node" "/home/austin/.local/bin/npm" "publish"
+45 error cwd /home/austin/dev/clay-nps
+46 error node -v v0.10.33
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
