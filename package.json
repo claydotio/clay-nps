@@ -1,6 +1,6 @@
 {
   "name": "clay-nps",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "core",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/claydotio/clay-nps",
   "dependencies": {
-    "clay-environment": "^0.1.4",
+    "clay-environment": "^0.3.0",
     "coffee-script": "^1.9.2",
     "lodash": "^3.7.0",
     "loga": "^0.1.1",
