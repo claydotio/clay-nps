@@ -22,7 +22,7 @@
     "lodash": "^3.7.0",
     "loga": "^0.1.1",
     "rx-lite": "^2.5.2",
-    "zorium": "^1.0.0",
-    "zorium-paper": "0.4.1"
+    "zorium": "git://github.com/claydotio/zorium.git",
+    "zorium-paper": "git://github.com/claydotio/zorium-paper"
   }
 }
