@@ -1,6 +1,6 @@
 {
   "name": "clay-nps",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "core",
   "main": "index.js",
   "scripts": {
